@@ -19,7 +19,6 @@ export function RowCounter() {
 
   return (
     <div>
-      <p className="textbox">Row Counter</p>
       <div className={styles.row}>
         <button
           className={styles.button}
@@ -48,20 +47,14 @@ export function RowCounter() {
           className={styles.button}
           onClick={() => dispatch(incrementByAmount(incrementValue))}
         >
-          Add Amount
+          Add Row
         </button>
         <button
           className={styles.asyncButton}
           onClick={() => dispatch(incrementAsync(incrementValue))}
         >
-          Add Async
+          Add Slowly
         </button>
-        {/* <button
-          className={styles.button}
-          onClick={() => dispatch(incrementIfOdd(incrementValue))}
-        >
-          Add If Odd
-        </button> */}
       </div>
     </div>
   );

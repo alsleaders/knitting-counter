@@ -66,7 +66,7 @@ export function RepeatCounter() {
               className={styles.repeatButton}
               onClick={() => dispatch(incrementByAmount(incrementValue))}
             >
-              Add Amount
+              Add Repeats
             </button>
             <button
               className={styles.repeatButton}
