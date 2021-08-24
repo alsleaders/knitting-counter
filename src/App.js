@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
+import { RowCounter } from "./features/counter/RowCounter";
 import "./App.css";
 
 function App() {
@@ -8,10 +8,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
+        <p className="textbox">Row Counter</p>
+        <RowCounter />
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
+        </p> */}
         {/* <span>
           <span>Learn </span>
           <a
