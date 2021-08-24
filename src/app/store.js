@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import rowCounterReducer from "../features/counter/rowCounterSlice";
+import repeatCounterReducer from "../features/counter/repeatCounterSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    rowCounter: rowCounterReducer,
+    repeatCounter: repeatCounterReducer,
   },
 });

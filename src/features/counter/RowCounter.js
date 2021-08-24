@@ -6,12 +6,12 @@ import {
   incrementByAmount,
   incrementAsync,
   //incrementIfOdd,
-  selectCount,
-} from "./counterSlice";
+  selectRowCount,
+} from "./rowCounterSlice";
 import styles from "./Counter.module.css";
 
 export function RowCounter() {
-  const count = useSelector(selectCount);
+  const count = useSelector(selectRowCount);
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState("1");
 
@@ -19,6 +19,7 @@ export function RowCounter() {
 
   return (
     <div>
+      <p className="textbox">Row Counter</p>
       <div className={styles.row}>
         <button
           className={styles.button}
